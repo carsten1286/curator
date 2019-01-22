@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  curator:      
+    image: carsten231286/curator
+    environment:
+      PORT: 443
+      USERNAME: ipunkt
+      PASSWORD: ;iplb09+
+      HOST: es.logging.ipunkt.cloud
+      HOST2: es-data.logging.ipunkt.cloud
+      SSL: "True"
+      SKIP_SSL: "False"
+      CLOSE_COUNT: 7
+      DELETE_COUNT: 14

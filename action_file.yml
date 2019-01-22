@@ -1,0 +1,35 @@
+actions:
+  1:
+    action: close
+    description: close indices
+    options:
+      ignore_empty_list: True
+      delete_aliases: False
+      timeout_override:
+      continue_if_exception: True
+      disable_action: False
+    filters:
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: ##CLOSE_COUNT##
+      exclude:
+  2:
+    action: delete_indices
+    description: delete indices
+    options:
+      ignore_empty_list: True
+      timeout_override:
+      continue_if_exception: True
+      disable_action: False
+    filters:
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: ##DELETE_COUNT##
+      exclude:
+

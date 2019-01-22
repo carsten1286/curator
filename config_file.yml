@@ -1,0 +1,17 @@
+client:
+  hosts:
+     - ##HOST##
+     - ##HOST2##
+  port: ##PORT##
+  url_prefix:
+  use_ssl: ##SSL##
+  ssl_no_validate: ##SKIP_SSL##
+  http_auth: ##USERNAME##:##PASSWORD##
+  timeout: 30
+  master_only: False
+
+logging:
+  loglevel: INFO
+  logfile:
+  logformat: default
+  blacklist: ['elasticsearch', 'urllib3']
