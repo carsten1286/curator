@@ -11,5 +11,5 @@ services:
       HOST2: "${HOST2}"
       SSL: "${SSL}"
       SKIP_SSL: "${SKIP_SSL}"
-      CLOSE_COUNT: 7
-      DELETE_COUNT: 14
+      CLOSE_COUNT: "${CLOSE_COUNT}"
+      DELETE_COUNT: "${DELETE_COUNT}"
