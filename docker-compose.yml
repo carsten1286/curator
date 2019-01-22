@@ -4,12 +4,12 @@ services:
   curator:      
     image: carsten231286/curator
     environment:
-      PORT: 443
-      USERNAME: 
-      PASSWORD: 
-      HOST: 
-      HOST2: 
-      SSL: "True"
-      SKIP_SSL: "False"
+      PORT: "${PORT}"
+      USERNAME: "${USERNAME}"
+      PASSWORD: "${PASSWORD}"
+      HOST: "${HOST}"
+      HOST2: "${HOST2}"
+      SSL: "${SSL}"
+      SKIP_SSL: "${SKIP_SSL}"
       CLOSE_COUNT: 7
       DELETE_COUNT: 14
